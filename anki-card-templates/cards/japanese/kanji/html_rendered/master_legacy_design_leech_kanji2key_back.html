@@ -1,0 +1,330 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>/home/fuchur/Documents/prog/japan/anki/cards/cards/japanese/kanji/legacy_design/kanji2key_back.html</title><style>/*============================= General Styling =============================*/
+
+.card {
+    font-family: Arial; 
+    font-size: 20px;
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+.mobile { font-family: "myfont"; }
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+
+/*=============================== Main Frame ================================*/
+
+#main_frame {
+    border: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+    width: 100%;
+    border-color:#000000;
+}
+
+#main_frame td, #main_frame tr{
+    border: solid;
+    border-width: 1px;
+    border-color:#000000;
+}
+
+
+/*================================ Question/Answer =================================*/
+
+#expression{
+    font-family: MSmincho;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+#question{
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#keyword{
+    font-family: MSmincho;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#note{
+    font-size: 20px
+    font-weight: normal
+}
+
+/*Answer*/
+#an{
+}
+
+#an th{
+    border-style: solid none solid; 
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-color:#000000#000000;
+    text-align: center;
+    font-weight: normal;
+}
+
+#diagram_replace{
+    font-family: MSmincho;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+/*+++++++++++++++++++++++++++++++++ kanji2readings +++++++++++++++++++++++++++++++++*/
+
+/*--------------------------------- BADGES ---------------------------------*/
+
+.badge{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    border-radius: 0px;
+    border: solid;
+    border-width: 1px;
+    margin: 0px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.badge.kun{
+    background-color: #01FF70;
+}
+
+.badge.on{
+    background-color: #7FDBFF;
+}
+
+.badge.number_of_readings{
+    background-color: #F012BE;
+}
+
+#reading_table{
+    border: none;
+    width: 100%;
+}
+
+#reading_table td{
+    border: none;
+    width:50%;
+    text-align: center;
+}
+
+/*+++++++++++++++++++++++++++++++++ formatting readings +++++++++++++++++++++++++++++++++*/
+
+#reading_table td:first-child{
+    border-right: solid;
+    border-right-width: 1px;
+    text-align: right;
+    border-color:black;
+}
+
+#reading_table td:last-child{
+    text-align: left;
+}
+
+.reading{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: left; 
+    font-weight: normal;
+    margin: 5px;
+    display: inline-block;
+}
+
+.reading.kun{}
+.reading.on{}
+
+/*========================= Additional Information ==========================*/
+
+#image{
+    text-align: left;
+    /*padding-right: 20px;/*  /* compensate for td on the left to make it look 
+                             centered wrt the main frame */
+}
+
+
+#image img {
+    height: auto;
+    width: 300px;
+    max-height: 500px;
+    margin: 3px;
+}
+
+/*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
+
+/* 
+   Format first/all other columns separetely:
+   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+*/
+
+td{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+td + td {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/*+++++++++++++++++++++++++++++++++ Links ++++++++++++++++++++++++++*/
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.link{
+    border-radius: 25px;
+    border: solid;
+    border-width: 1px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px; 
+    background-color: white;
+}
+
+.link:hover{
+    font-weight: bold;
+    background-color: white;
+}
+
+.link:active{
+    background-color: white;
+}
+
+#tools td{
+    vertical-align: center;
+    border-top-width: 2px;
+    border-color:#000000
+}
+
+/*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
+
+.technical{
+    font-family: Courier; 
+    font-size: 15px;
+}
+
+#first_technical td{
+    /*make border between technical fields and normal data fields thick*/
+    border-top-width: 2px;
+    border-color:#000000;
+}
+</style></head><body><table  id="main_frame">
+    
+    <!-- ============================ Question ============================ -->
+
+    <tr id="question">
+        <th colspan=2 id="question">
+            
+            <div id="expression"> 
+                絶 
+            </div>
+  
+        </th>
+    </tr>
+
+    <!-- ============================= Answer ============================= -->
+
+    <tr id="an">
+        <th colspan=2>
+            
+            <div id="note">
+                Some note here.
+            </div>
+
+            <div id="keyword">
+                test
+            </div>
+            
+            <div id="note">
+                ({{Keyword_hints}})
+            </div>
+
+        </th>
+    </tr>
+
+    <!-- ===================== Additional Information ===================== -->
+
+    <tr class="data_fields">
+        <td>I</td>
+        <td id="image"><img src="1.jpg"><img src="2.png"></td>
+
+    <!-- *************************** Story & Co *************************** -->
+
+    <tr class="data_fields">
+        <td>S</td>
+        <td><div>[some_source, 19-3-2012] <b>Story</b> to help me <u>remember</u> how to write this <u>kanji</u>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at massa eget lacus feugiat ornare nec iaculis justo. Donec venenatis, ex vitae aliquet aliquam.</div></br><div>[other_guy,unk] Some other story here  sit amet aliquam. Aliquam venenatis faucibus mauris sed egestas. Vivamus bibendum placerat sodales. Praesent vel est viverra, aliquet nisi nec, luctus nibh. Vestibulum.</div></td>
+    </tr>
+
+    <tr class="data_fields">
+        <td>H</td>
+        <td>575</td>
+    </tr>
+
+    <tr class="data_fields">
+        <td>M</td>
+        <td>{{Other_Meanings}}</td>
+    </tr>
+    
+
+    <!-- ***************************** Tools ****************************** -->
+
+    <tr id="tools">
+        <td>T</td>
+        <td>
+            <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+            <div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+        </td>
+    </tr>
+
+    <!-- ********************* Technical Information ********************** -->
+
+    <tr class="technical" id="first_technical">
+        <td>T</td>
+        <td>
+            some_tag other tag leech
+        </td>
+    </tr>
+
+    <tr class="technical">
+        <td>Y</td>
+        <td>Japanese_my_note_type</td>
+    </tr>
+
+    <tr class="technical">
+        <td>D</td>
+        <td>My_deck::deck</td>
+    </tr>
+
+    <tr class="technical">
+        <td>C</td>
+        <td>my_awesome_test_note</td>
+    </tr>
+
+</table>
+</body></html>

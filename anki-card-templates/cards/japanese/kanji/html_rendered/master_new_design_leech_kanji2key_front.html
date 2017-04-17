@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>/home/fuchur/Documents/prog/japan/anki/cards/cards/japanese/kanji//key2kanji_front.html</title><style>/*================================ General Styling =================================*/
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>/home/fuchur/Documents/prog/japan/anki/cards/cards/japanese/kanji/new_design/kanji2key_front.html</title><style>/*================================ General Styling =================================*/
 
 
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
@@ -232,17 +232,15 @@ th, td {
 }
 </style></head><body><!-- ============================ Question ============================ -->
 
-<div id="keyword">test</div>
+<div id="expression" class="japanese">絶</div>
 
 <script>
-    var tags = "marked some_tag2 other tag";
-    if( tags.indexOf('marked') >= 0){
-      document.getElementById("keyword").className += " ismarked"; // note the space!
-    }
-    if( tags.indexOf('leech') >= 0){
-      document.getElementById("keyword").className += " isleech"; // note the space!
-    }
-</script>
-
-<div id="note"> (Do not confuse with blargh!!) </div>
+var tags = "some_tag other tag leech";
+if( tags.indexOf('marked') >= 0){
+  document.getElementById("expression").className += " ismarked"; // note the space!
+}
+if( tags.indexOf('leech') >= 0){
+  document.getElementById("expression").className += " isleech"; // note the space!
+}
+</script></body></html>
 </body></html>

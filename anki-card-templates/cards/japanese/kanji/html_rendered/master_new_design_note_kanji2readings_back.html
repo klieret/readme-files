@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>/home/fuchur/Documents/prog/japan/anki/cards/cards/japanese/kanji//key2kanji_back.html</title><style>/*================================ General Styling =================================*/
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>/home/fuchur/Documents/prog/japan/anki/cards/cards/japanese/kanji/new_design/kanji2readings_back.html</title><style>/*================================ General Styling =================================*/
 
 
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
@@ -232,42 +232,58 @@ th, td {
 }
 </style></head><body><!-- ============================ Question ============================ -->
 
-    <div id="keyword">test</div>
+<div class="japanese" id="expression">絶</div>
 
 <script>
     var tags = "some_tag other tag";
     if( tags.indexOf('marked') >= 0){
-      document.getElementById("keyword").className += " ismarked"; // note the space!
+      document.getElementById("expression").className += " ismarked"; // note the space!
     }
     if( tags.indexOf('leech') >= 0){
-      document.getElementById("keyword").className += " isleech"; // note the space!
+      document.getElementById("expression").className += " isleech"; // note the space!
     }
 </script>
 
-    <div id="note"> (Do not confuse with blargh!!) </div>
-
 <!-- ============================= Answer ============================= -->
-            
+
     <div id="note">Some note here.</div>
 
-    <div id="diagram"><img src='stroke.svg'></div>
+
+<div class="reading-container">
+    <div class="japanese reading kunyomi">くん</div>
+
+    <!--- Add a "," in between both kinds of readings, if both are present -->
+        <div class="japanese reading kunyomi">、</div>
+
+    <div class="japanese reading onyomi">オン、ホン</div>
+</div>
+            
 
 
 <!-- ============================= Mnemonic ============================= -->
 
 
-    <div class="section">
-        <div class="section-title">Mnemonic Image</div>
-        <div class="section-content image-container"><img src="1.jpg"><img src="2.png"></div>
+
+<div class="section">
+    <div class="section-title">Reading Image</div>
+    <div class="section-content image-container"><img src="1.jpg"></div>
+</div>
+
+<div class="section">
+    <div class="section-title">Mnemonic</div>
+    <div class="section-content">
+
+            <div class="readings-story combined">Story for both on and kun reading. Sed nec scelerisque enim, sed luctus orci.</div>
+
+            <div class="readings-story onyomi">Story to remember the on reading. Nam mollis, neque ut semper tristique, quam lectus pellentesque eros, quis iaculis eros massa in neque. Ut porttitor ac nulla sit amet aliquam. Aliquam venenatis faucibus mauris sed egestas. Vivamus bibendum placerat sodales. Praesent vel est viverra, aliquet nisi nec, luctus nibh. Vestibulum augue est, tristique a eros a, luctus venenatis neque. Fusce vehicula, massa pulvinar aliquam vehicula, nisl magna faucibus augue</div>
+
+            <div class="readings-story kunyomi">Story to remember the kun reading. Sed nec scelerisque enim, sed luctus orci. Aliquam erat volutpat. Nulla ac viverra odio, nec aliquet ligula. Vivamus porttitor nisi in neque elementum facilisis. Proin maximus venenatis dolor, non dictum augue varius ac. Mauris eu dolor quis augue dapibus consequat. Morbi facilisis tor</div>
+
     </div>
+</div>
 
-    <div class="section">
-        <div class="section-title">Mnemonic</div>
-        <div class="section-content kanji-story"><div>[some_source, 19-3-2012] <b>Story</b> to help me <u>remember</u> how to write this <u>kanji</u>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at massa eget lacus feugiat ornare nec iaculis justo. Donec venenatis, ex vitae aliquet aliquam.</div></br><div>[other_guy,unk] Some other story here  sit amet aliquam. Aliquam venenatis faucibus mauris sed egestas. Vivamus bibendum placerat sodales. Praesent vel est viverra, aliquet nisi nec, luctus nibh. Vestibulum.</div></div>
-    </div>
 
-<!-- ============================= Tools ============================= -->
-
+<!-- ***************************** Tools ****************************** -->
 
 <div class="section">
     <!-- <div class="section-title">Tools</div> -->
@@ -281,45 +297,48 @@ th, td {
     </div>
 </div>
 
-
 <!-- ===================== Additional Information ===================== -->
 
 <div class="section">
     <div class="section-title">Additional Information</div>
     <table class="details">
+           <tr>
+                <td>Keyword</td>
+                <td>[test]</td>
+           </tr>
 
-    <tr>
-        <td>Heisig Index</td>
-        <td>575</td>
-    </tr>
+            <tr>
+                <td>Heisig Index</td>
+                <td>575</td>
+            </tr>
 
-    <tr>
-        <td>KW other meanings</td>
-        <td>some otherOther meanings</td>
-    </tr>
 
-    <tr>
-        <td>Tags</td>
-        <td>
-        some_tag other tag
-        </td>
-    </tr>
+            <tr>
+                <td>KW other meanings</td>
+                <td>some otherOther meanings</td>
+            </tr>
 
-    <tr>
-        <td>Note Type</td>
-        <td>Japanese_my_note_type</td>
-    </tr>
+        <tr>
+            <td>Tags</td>
+            <td>
+                some_tag other tag
+            </td>
+        </tr>
 
-    <tr >
-        <td>Deck</td>
-        <td>My_deck::deck</td>
-    </tr>
+        <tr>
+            <td>Note Type</td>
+            <td>Japanese_my_note_type</td>
+        </tr>
 
-    <tr>
-        <td>Card</td>
-        <td>my_awesome_test_note</td>
-    </tr>
+        <tr >
+            <td>Deck</td>
+            <td>My_deck::deck</td>
+        </tr>
 
+        <tr>
+            <td>Card</td>
+            <td>my_awesome_test_note</td>
+        </tr>
     </table>
 </div>
 </body></html>
